@@ -17,5 +17,8 @@ class Transfer
   end
 
   def execute_transaction
-
+    if sender.balance < self.amount 
+      self.status = "rejected"
+    end 
+  end  
 end
