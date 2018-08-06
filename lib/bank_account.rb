@@ -12,6 +12,6 @@ class BankAccount
   end
 
   def display_balance
-    puts balance
-  end 
+    "Your balance is $#{self.balance}."
+  end
 end
